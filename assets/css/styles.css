@@ -594,13 +594,13 @@ footer {
     text-align: center;
 }
 
-.sucess-content h1 {
+.success-content h1 {
     font-size: var(--text-3xl);
     font-weight: 700;
     color: var(--purple-800);
 }
 
-.sucess-content h2 {
+.success-content h2 {
     font-size: var(--text-lg);
     color: var(--gray-400);
 
