@@ -30,7 +30,7 @@
 <body>
     <!-- Cabeçalho da página -->
     <header>
-        <div class="menu-container">
+        <div class="menu-content">
             <!-- Título do cabeçalho -->
             <a href="index.html" id="titulo"> Portfólio</a>
             <!-- Navegação -->
@@ -50,7 +50,7 @@
         <section id="hero" class="section-container hero-container">
 
             <!-- Boas Vindas -->
-            <article>
+            <article class="hero-content">
 
                 <span>👋🏻 Olá, eu sou o Joel</span>
                 <h1>Desenvolvedor Full Stack</h1>
@@ -65,8 +65,7 @@
 
             <!-- Imagem da Seção hero -->
             <figure class="hero-image">
-                <img src="./assets/img/foto_dev_man.svg" width="300px" alt="Foto do Autor do Site"
-                    class="float-animation">
+                <img src="./assets/img/foto_dev_man.svg" alt="Foto do Autor do Site" class="float-animation">
             </figure>
         </section>
 
@@ -75,51 +74,52 @@
 
             <!-- Imagem da seção About -->
             <figure class="about-image">
-                <img src="./assets/img/avatar_dev_man.svg" width="300px" alt="Foto - Perfil do autor do site" </figure>
+                <img src="./assets/img/avatar_dev_man.svg" alt="Foto - Perfil do autor do site">
+            </figure>
 
-                <!-- Conteúdo da seção About -->
-                <article>
-                    <h2>Sobre mim</h2>
-                    <p>Olá! Sou Joel Ramalho Filho, um desenvolvedor Full Stack apaixonado por criar experiências
-                        digitais incríveis. Com ampla experiência em tecnologias como HTML, CSS, JavaScript, Java,
-                        Python e Node.js, sou capaz de transformar ideias em soluções funcionais e esteticamente
-                        agradáveis.</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Morbi tincidunt
-                        augue vel interdum sodales. Curabitur sed convallis neque. Phasellus sit amet eleifend sem.
-                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec arcu lobortis,
-                        volutpat lectus facilisis, iaculis erat. Aliquam nec mi eget urna sodales dictum vel nec eros.
-                        In feugiat ac massa non finibus. Morbi egestas volutpat velit a mollis. Mauris a dolor nulla.
-                        Duis porta lacus eget leo vulputate, nec mattis turpis lobortis.Praesent tempor hendrerit diam
-                        in facilisis. Suspendisse pulvinar erat lectus, eu vestibulum odio molestie et. Curabitur varius
-                        dictum elit, at porta ipsum finibus congue. Etiam ut pretium mi, non accumsan ligula. In sodales
-                        nunc et urna facilisis molestie. Suspendisse potenti. Nam pretium nulla at tellus semper, nec
-                        efficitur ex lacinia. Proin efficitur dolor tortor, pellentesque convallis lectus euismod
-                        nec.Integer id mi id lorem accumsan volutpat eu nec magna. Maecenas tristique non dolor vitae
-                        euismod. Praesent eleifend lacus elit, vel pulvinar eros varius eget. Ut condimentum justo nibh,
-                        ac iaculis est vulputate eget. Cras et interdum mi. Cras id dolor tortor. Etiam consequat eget
-                        justo non molestie. Integer aliquet ante vel tempor aliquam. Ut ac hendrerit ligula, id
-                        scelerisque odio.Nulla non tellus sollicitudin, imperdiet mi congue, pellentesque lorem. Aliquam
-                        efficitur arcu quis augue imperdiet, sed rhoncus nulla molestie. Mauris nec dui ex. Cras dictum
-                        sit amet erat eleifend dapibus. Duis luctus interdum est vel sollicitudin. Donec aliquet arcu
-                        eros, volutpat dictum tellus dignissim ac. Sed sollicitudin eget erat sit amet molestie.
-                        Maecenas sed quam tincidunt, cursus elit accumsan, elementum diam. </p>
-                    <br>
+            <!-- Conteúdo da seção About -->
+            <article>
+                <h2>Sobre mim</h2>
+                <p>Olá! Sou Joel Ramalho Filho, um desenvolvedor Full Stack apaixonado por criar experiências
+                    digitais incríveis. Com ampla experiência em tecnologias como HTML, CSS, JavaScript, Java,
+                    Python e Node.js, sou capaz de transformar ideias em soluções funcionais e esteticamente
+                    agradáveis.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Morbi tincidunt
+                    augue vel interdum sodales. Curabitur sed convallis neque. Phasellus sit amet eleifend sem.
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec arcu lobortis,
+                    volutpat lectus facilisis, iaculis erat. Aliquam nec mi eget urna sodales dictum vel nec eros.
+                    In feugiat ac massa non finibus. Morbi egestas volutpat velit a mollis. Mauris a dolor nulla.
+                    Duis porta lacus eget leo vulputate, nec mattis turpis lobortis.Praesent tempor hendrerit diam
+                    in facilisis. Suspendisse pulvinar erat lectus, eu vestibulum odio molestie et. Curabitur varius
+                    dictum elit, at porta ipsum finibus congue. Etiam ut pretium mi, non accumsan ligula. In sodales
+                    nunc et urna facilisis molestie. Suspendisse potenti. Nam pretium nulla at tellus semper, nec
+                    efficitur ex lacinia. Proin efficitur dolor tortor, pellentesque convallis lectus euismod
+                    nec.Integer id mi id lorem accumsan volutpat eu nec magna. Maecenas tristique non dolor vitae
+                    euismod. Praesent eleifend lacus elit, vel pulvinar eros varius eget. Ut condimentum justo nibh,
+                    ac iaculis est vulputate eget. Cras et interdum mi. Cras id dolor tortor. Etiam consequat eget
+                    justo non molestie. Integer aliquet ante vel tempor aliquam. Ut ac hendrerit ligula, id
+                    scelerisque odio.Nulla non tellus sollicitudin, imperdiet mi congue, pellentesque lorem. Aliquam
+                    efficitur arcu quis augue imperdiet, sed rhoncus nulla molestie. Mauris nec dui ex. Cras dictum
+                    sit amet erat eleifend dapibus. Duis luctus interdum est vel sollicitudin. Donec aliquet arcu
+                    eros, volutpat dictum tellus dignissim ac. Sed sollicitudin eget erat sit amet molestie.
+                    Maecenas sed quam tincidunt, cursus elit accumsan, elementum diam. </p>
+                <br>
 
-                    <!-- Links (GitHub + Currículo) e Dados do GitHub -->
-                    <div class="about-buttons-data">
+                <!-- Links (GitHub + Currículo) e Dados do GitHub -->
+                <div class="about-buttons-data">
 
-                        <!-- Links -->
-                        <div class="buttons-container"></div>
+                    <!-- Links -->
+                    <div class="buttons-container">
                         <a href="#" target="_blank" class="botao">Github</a>
                         <a href="#" target="_blank" class="botao-outline">Currículo</a>
-
-                        <!-- Dados - Repositório github -->
-                        <div class="data-container"> </div>
+                    </div>
+                    <!-- Dados - Repositório github -->
+                    <div class="data-container">
 
                         <!-- Número de Seguidores -->
                         <div class="data-item">
@@ -136,7 +136,7 @@
                         </div>
 
                     </div>
-                </article>
+            </article>
         </section>
 
         <!-- Conteúdo da seção sobre -->
@@ -230,19 +230,19 @@
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
                 <span id="erro-nome"></span>
-                <br>
+
                 <label for="email">E-mail</label>
                 <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
                 <span id="erro-email"></span>
-                <br>
+
                 <label for="assunto">Assunto</label>
                 <input id="assunto" name="assunto" type="text" placeholder="Digite o Assunto">
                 <span id="erro-assunto"></span>
-                <br>
+
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
                 <span id="erro-mensagem"></span>
-                <br>
+
                 <button type="submit" class="botao">Enviar</button>
 
             </form>
