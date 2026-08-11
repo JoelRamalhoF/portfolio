@@ -29,8 +29,8 @@ async function getAboutGithub() {
             <article class="about-content">
                 <h2>Sobre mim</h2>
                 <p>Olá! Sou Joel Ramalho Filho, um desenvolvedor Full Stack apaixonado por criar experiências
-                    digitais incríveis. Com ampla experiência em tecnologias como HTML, CSS, JavaScript, Java,
-                    Python e Node.js, sou capaz de transformar ideias em soluções funcionais e esteticamente
+                    digitais incríveis. Trabalho com tecnologias como HTML, CSS, JavaScript, Java,
+                    Python, Node.js e React, sou capaz de transformar ideias em soluções funcionais e esteticamente
                     agradáveis.</p>
                 
 
@@ -40,7 +40,7 @@ async function getAboutGithub() {
                     <!-- Links -->
                     <div class="buttons-container">
                         <a href="${perfil.html_url}" target="_blank" class="botao">Github</a>
-                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
+                        <a href="https://docs.google.com/document/d/1OiiyrarnBo1_EoPMEoaZZj9FaSsEiKWt/preview" target="_blank" class="botao-outline">Currículo</a>
                     </div>
                     <!-- Dados - Repositório github -->
                     <div class="data-container">

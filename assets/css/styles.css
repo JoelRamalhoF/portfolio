@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-decoration: none;
     outline: none;
@@ -10,32 +10,47 @@
 
 /* Variáveis */
 :root {
-    /* Paleta de Cores - Purple */
-    --purple-50: #f4eaff;
-    --purple-100: #e9dcfa;
-    --purple-200: #cdb3f0;
-    --purple-300: #b186e5;
-    --purple-400: #9460db;
-    --purple-500: #6b36c8;
-    --purple-600: #5b2ca0;
-    --purple-700: #4c2177;
-    --purple-800: #441f88;
-    --purple-900: #2a0e4d;
-    --purple-950: #1a0730;
+    /* Fontes adicionadas para variação dentro da pagina */
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Paleta de cores - Creme */
+
+    --cream: #f5f0e6
+        /* Navy + ciano neon */
+        --purple-50: #eef4ff;
+    --purple-100: #dce8ff;
+    --purple-200: #b3cfff;
+    --purple-300: #89b3ff;
+    --purple-400: #5c95f5;
+    --purple-500: #22afc5;
+    --purple-600: #0996b3;
+    --purple-700: #1e293b;
+    --purple-800: #16213a;
+    --purple-900: #0f172a;
+    --purple-950: #070c17;
 
     /* Cores Neutras */
-    --gray-200: #e8e8e8;
-    --gray-400: #505861;
-    --black: #171717;
+    --gray-200: #e5e7eb;
+    --gray-400: #6b7280;
+    --black: #0f172a;
     --white: #FAF7FF;
 
-    /* Cores de Estado */
-    --error: #e63946;
+    /* Cor para o Fundo */
+
+    --fundo-cor1: #f3f4f6;
+
+    /* Cor descrição rodapé */
+    --rodape-cor1: #e5f9ff
+        /* Cores de Estado */
+        --error: #e63946;
 
     /* Sombras */
-    --shadow-sm: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 0.25rem 0.75rem rgba(107, 54, 200, 0.3);
-    --shadow-lg: 0 0.5rem 1.5rem rgba(107, 54, 200, 0.2);
+
+    --shadow-sm: 0 0.25rem 0.5rem rgba(15, 23, 42, 0.04);
+    --shadow-md: 0 0.25rem 0.75rem rgba(15, 23, 42, 0.10);
+    --shadow-lg: 0 0.5rem 1.5rem rgba(15, 23, 42, 0.18);
+
 
     /* Espaçamentos */
     --spacing-xs: 0.5rem;
@@ -64,6 +79,13 @@
     --transition-default: all 0.3s ease;
 }
 
+h1,
+h2,
+h3,
+#titulo {
+    font-family: var(--font-heading);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -72,7 +94,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--white);
+    background-color: var(--fundo-cor1);
+    background-image:
+        radial-gradient(circle at 1px 1px, rgba(34, 175, 197, 0.08) 1px, transparent 0);
+    background-size: 28px 28px;
     line-height: 1.6;
     color: var(--black);
 }
@@ -84,10 +109,13 @@ main {
 /* Seções - Base Comum */
 
 .section-container {
+    background-color: var(--cream);
     max-width: 70rem;
     margin: 0 auto;
     padding: var(--spacing-xl) var(--spacing-md);
     scroll-margin-top: 6rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
 }
 
 /* Botões */
@@ -111,28 +139,28 @@ main {
 }
 
 .botao {
-    border-color: var(--purple-700);
+    border-color: var(--purple-600);
     background-color: var(--purple-500);
     color: var(--white);
 }
 
 .botao:hover {
-    border-color: var(--purple-800);
-    background-color: var(--purple-700);
+    border-color: var(--purple-700);
+    background-color: var(--purple-600);
     box-shadow: var(--shadow-md);
     transform: translateY(-0.25rem);
 }
 
 .botao-outline {
-    border-color: var(--purple-700);
+    border-color: var(--purple-500);
     background-color: transparent;
-    color: var(--purple-700);
+    color: var(--purple-500);
 }
 
 .botao-outline:hover {
-    border-color: var(--purple-700);
-    background-color: var(--purple-500);
-    color: var(--white);
+    border-color: var(--purple-600);
+    background-color: var(--purple-50);
+    color: var(--purple-800);
     transform: translateY(-0.25rem);
 }
 
@@ -157,6 +185,7 @@ header {
     height: 5rem;
     border-bottom: var(--spacing-xs) solid var(--gray-200);
     box-shadow: var(--purple-800);
+    background: linear-gradient(to left, var(--purple-500), var(--purple-800));
     background-color: var(--purple-800);
 }
 
@@ -218,6 +247,7 @@ header a:hover {
 .hero-content h1 {
     font-size: var(--text-3xl);
     font-weight: 700;
+    color: var(--black)
 }
 
 /* Configura todos os Paragrafos */
@@ -359,14 +389,15 @@ header a:hover {
     height: 100%;
     border: 0.15rem solid var(--gray-200);
     border-radius: var(--radius-lg);
-    background-color: var(--white);
+    background-color: var(--cream);
     box-shadow: var(--shadow-sm);
     overflow: hidden;
     transition: var(--transition-default);
 }
 
 .project-card:hover {
-    box-shadow: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-0.25rem);
 }
 
 .project-image {
@@ -518,7 +549,7 @@ header a:hover {
 }
 
 .social-icon img:hover {
-    filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(243deg) brightness(79%) contrast(91%);
+    filter: brightness(0) saturate(100%) invert(54%) sepia(95%) saturate(1782%) hue-rotate(148deg) brightness(94%) contrast(92%);
 }
 
 /* Formulário */
@@ -570,7 +601,8 @@ footer {
     background: linear-gradient(to right, var(--purple-500), var(--purple-800));
     font-weight: 600;
     text-align: center;
-    color: var(--white);
+    color: #e5f9ff;
+
 }
 
 /* Página de Sucesso */
@@ -769,6 +801,14 @@ footer {
     .project-tags {
         min-height: 2.5rem;
         align-items: flex-start;
+        gap: 0.4rem;
+    }
+
+    .tag {
+        padding: 0.25rem 0.6rem;
+        font-size: 0.7rem;
+        line-height: 1;
+        white-space: nowrap;
     }
 
     .swiper-wrapper {
@@ -785,6 +825,13 @@ footer {
     .swiper-button-next,
     .swiper-button-prev {
         display: none;
+    }
+
+    .project-buttons .botao,
+    .project-buttons .botao-outline {
+        min-width: 6.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
     }
 
     /* Responsividade Tablet - Seção Contacts */
@@ -896,21 +943,21 @@ footer {
 
     /* Responsividade Celular Seção AProjects*/
     .projects-container {
-        margin: var(--spacing-sm) var(--spacing-sm);
+        margin: var(--spacing-sm) 0.25rem;
 
     }
 
     .projects-swiper {
         margin: 0;
-        padding: var(--spacing-sm) var(--spacing-lg) 2.5rem;
+        padding: var(--spacing-sm) 0.5rem 2.5rem;
     }
 
     .project-card {
         width: 100%;
-        height: 30rem;
-        min-height: 30rem;
-        max-height: 30rem;
         max-width: 100%;
+        height: auto;
+        min-height: 24rem;
+
 
     }
 
@@ -921,15 +968,48 @@ footer {
         height: 100%;
     }
 
+    .project-content h3 {
+        font-size: var(--text-base);
+    }
+
     .project-content p {
+        /* flex: 1;
+        overflow: hidden; */
         flex: 1;
+        font-size: var(--text-sm);
+        line-height: 1.4;
         overflow: hidden;
     }
 
     .project-tags {
-        min-height: 2.5rem;
+        min-height: auto;
         align-items: flex-start;
+        gap: 0.25rem;
     }
+
+    /* >> Adicionado para encaixar melhor no mobile  */
+    .tag {
+        padding: 0.15rem 0.4rem;
+        font-size: 0.6rem;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .project-buttons {
+        margin-top: var(--spacing-sm);
+        justify-content: center;
+        gap: var(--spacing-xs);
+        flex-wrap: wrap;
+    }
+
+    .project-buttons .botao,
+    .project-buttons .botao-outline {
+        min-width: 5.5rem;
+        padding: 0.45rem 0.85rem;
+        font-size: 0.75rem;
+    }
+
+    /* até aqui - Referencia para futuras mudanças << */
 
     .swiper-wrapper {
         align-items: stretch;
