@@ -37,19 +37,21 @@ O projeto consome dados dinâmicos da **API do GitHub**, permitindo que informa�
 ## Estrutura do Projeto
  
 ```
-📁portfolio/
+📁 portfolio/
 │
-├── index.html        # Página principal do portfólio
-├── success.html      # Página de confirmação de envio do formulário
+├── index.html          # Página principal do portfólio
+├── success.html        # Página de confirmação de envio do formulário
 │
-├── 📁assets/
-│   ├── 📁css/
-│   │   └── styles.css    # Estilos e responsividade
-│   ├── 📁js/
-│   │   └── scripts.js    # Integração com GitHub, carrossel e validações
-│   ├── 📁img/            # Imagens e ilustrações
-│   └── 📁icons/          # Ícones das linguagens e redes sociais
+├── 📁 assets/
+│   ├── 📁 css/
+│   │   └── styles.css  # Estilos e responsividade
+│   ├── 📁 icons/       # Ícones das linguagens e redes sociais
+│   └── 📁 img/         # Imagens e ilustrações
 │
+├── 📁 js/
+│   └── script.js       # Integração com GitHub, carrossel e validações
+│
+├── .gitignore
 └── README.md
 ```
  
